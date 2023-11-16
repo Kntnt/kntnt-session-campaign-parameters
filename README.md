@@ -38,11 +38,11 @@ The plugin saves the campaign parameters and allows you to retrieve them later, 
 
 ### Function get()
 
-`\Kntnt\Session_Campaign_Parameters\get( 'param' )` returns the value of the named camping parameters if such campaign parameter has been sent with any GET request during the current session. Otherwise, it returns `null`.
+`\Kntnt\Session_Campaign_Parameters\get( 'param' )` returns the value of the named camping parameter (`param`) if such campaign parameter has been sent with any GET request during the current session. Otherwise, it returns `null`.
 
-`\Kntnt\Session_Campaign_Parameters\get( 'param_1', 'param_2', … )` returns an array with all parameters as keys and in the same order as given where the values of the named camping parameters if such campaign parameters have been sent with any GET request during the current session.
+`\Kntnt\Session_Campaign_Parameters\get( 'param_1', 'param_2', … )` returns an array equivalent to `[ \Kntnt\Session_Campaign_Parameters\get( 'param_1' ), \Kntnt\Session_Campaign_Parameters\get( 'param_2' ), … ]`.
 
-`\Kntnt\Session_Campaign_Parameters\get()` returns  `\Kntnt\Session_Campaign_Parameters\get( \Kntnt\Session_Campaign_Parameters\parameters() )`.
+`\Kntnt\Session_Campaign_Parameters\get()` returns an array equivalent to `\Kntnt\Session_Campaign_Parameters\get( \Kntnt\Session_Campaign_Parameters\parameters() )`.
 
 ### Function parameters()
 
@@ -56,7 +56,7 @@ You can filter the campaign parameters managed with `add_filter( 'kntnt-session-
 
 This plugin requires PHP 7.4 or later.
 
-This plugin has no dependencies. However, it uses [PHP sessions](https://www.php.net/manual/en/book.session.php). Therefore, itinstall and activate Pantheon's *[WordPress Native PHP Sessions](https://wordpress.org/plugins/wp-native-php-sessions/)* plugin for better performance and scalability.
+This plugin has no dependencies. However, it uses [PHP sessions](https://www.php.net/manual/en/book.session.php). Therefore, install and activate Pantheon's *[WordPress Native PHP Sessions](https://wordpress.org/plugins/wp-native-php-sessions/)* plugin for better performance and scalability.
 
 ## Installation
 
